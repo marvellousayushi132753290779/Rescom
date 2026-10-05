@@ -15,8 +15,8 @@ export class SimulatedBleTransport implements ITransport {
   private seedDefaultSimulatedPeers(): void {
     const campusPeers: PeerInfo[] = [
       {
-        peerId: 'peer-rahul-01',
-        displayName: 'Rahul Sharma (CS Lab)',
+        peerId: 'peer-node-01',
+        displayName: 'Nearby Peer (CS Lab)',
         deviceId: 'cg-node-a1b2c3d4e5f60001',
         publicKeyPem: '',
         connectionState: 'CONNECTED',

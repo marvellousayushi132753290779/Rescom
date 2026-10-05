@@ -29,7 +29,7 @@ if (node_fs_1.default.existsSync(frontendDist)) {
 const server = node_http_1.default.createServer(app);
 // Primary Rescom node for this machine
 const localNode = new peerNode_js_1.PeerNode({
-    displayName: 'Rahul (Local Device)',
+    displayName: 'Local Device',
     department: 'Computer Science & Eng',
     semester: 'Sem 6',
     dbPath: './campus_grid.db',
@@ -120,7 +120,7 @@ localNode.repo.saveMessage({
     conversationId: sampleConvId,
     senderId: 'peer-aman-02',
     receiverId: localNode.getLocalId(),
-    content: 'Hey Rahul! Campus Wi-Fi is completely down in Block B. Are you receiving this over mesh?',
+    content: 'Hey there! Campus Wi-Fi is completely down in Block B. Are you receiving this over mesh?',
     messageType: 'TEXT',
     status: 'DELIVERED',
     createdAt: Date.now() - 1800000,

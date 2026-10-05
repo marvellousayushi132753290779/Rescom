@@ -11,7 +11,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   profile,
   onUpdateProfile,
 }) => {
-  const [displayName, setDisplayName] = useState(profile?.displayName || 'Rahul Sharma');
+  const [displayName, setDisplayName] = useState(profile?.displayName || 'Local User');
   const [department, setDepartment] = useState(profile?.department || 'Computer Science & Engineering');
   const [semester, setSemester] = useState(profile?.semester || 'Semester 6');
   const [isSaving, setIsSaving] = useState(false);

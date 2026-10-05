@@ -63,7 +63,7 @@ async function runCryptoSecurityTests() {
 
   // TEST 4: Anti-Tamper Verification (GCM Authentication Tag Enforcement)
   try {
-    const message = 'Transfer 1000 Credits to Rahul';
+    const message = 'Transfer 1000 Credits to another user';
     const encrypted = CryptoService.encryptPayload(message, sharedSecretA);
 
     // Tamper with ciphertext by modifying a byte
